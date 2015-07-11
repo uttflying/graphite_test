@@ -18,11 +18,11 @@ Twisted需要配合zope.interface 3.6以上版本使用
 ## 安装步骤
 
     mkdir /home/test/graphite
-cd /home/test/graphite
-sudo pip install https://github.com/graphite-project/ceres/tarball/master
-sudo pip install carbon --install-option="--prefix=/home/test/graphite" --install-option="--install-lib=/home/test/graphite/lib"
-sudo pip install whisper （后面千万不要添加参数，否则会导致whisper安装失败的）
-sudo pip install graphite-web --install-option="--prefix=/home/test/graphite" --install-option="--install-lib=/home/test/graphite/webapp"
+    cd /home/test/graphite
+    sudo pip install https://github.com/graphite-project/ceres/tarball/master
+    sudo pip install carbon --install-option="--prefix=/home/test/graphite" --install-option="--install-lib=/home/test/graphite/lib"
+    sudo pip install whisper （后面千万不要添加参数，否则会导致whisper安装失败的）
+    sudo pip install graphite-web --install-option="--prefix=/home/test/graphite" --install-option="--install-lib=/home/test/graphite/webapp"
 
 sudo pip install daemonize
 vi /home/test/graphite/lib/carbon/util.py
