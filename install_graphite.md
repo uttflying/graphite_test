@@ -1,6 +1,6 @@
 ## 依赖关系解决：
 
-sudo yum -y install bitmap bitmap-fonts Django pycairo python-devel python-ldap python-memcached mod_wsgi mod_python python-sqlite2 glibc-devel gcc gcc-c++ git openssl-devel  httpd memcached python-hashlib django-tagging  python-simplejson pip
+    sudo yum -y install bitmap bitmap-fonts Django pycairo python-devel python-ldap python-memcached mod_wsgi mod_python python-sqlite2 glibc-devel gcc gcc-c++ git openssl-devel  httpd memcached python-hashlib django-tagging  python-simplejson pip
 
 #### 安装Twisted和zope.interface
 
