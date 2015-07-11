@@ -33,6 +33,7 @@
 #### 为Graphite添加CORS支持
 
 一款设置CORS（Cross-Origin Resource Sharing）标头的应用，基于XmlHttpRequest，对管理Django应用中的跨域请求非常有帮助
+
     sudo pip install django-cors-headers configobj
     vi /home/wenba/graphite/webapp/graphite/app_settings.py
       INSTALLED_APPS里面添加corsheaders, MIDDLEWARE_CLASSES里面添加’corsheaders.middleware.CorsMiddleware’
