@@ -42,6 +42,8 @@ Twisted需要配合zope.interface 3.6以上版本使用
     mkdir /home/test/graphite/wsgi
     vi /home/test/graphite/conf/graphite.wsgi
       修改为sys.path.append('/home/test/graphite/webapp')
+    vi /home/wenba/graphite/conf/storage-schemas.conf
+      配置数据存储的时间点及数据保存时长 
 
 #### 为了防止whisper的产生数据过多，占用/分区的磁盘空间，需要转移至/data目录下
 
