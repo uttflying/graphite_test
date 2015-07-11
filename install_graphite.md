@@ -1,4 +1,4 @@
-## 依赖关系解决：
+## 依赖关系解决
 
     sudo yum -y install bitmap bitmap-fonts Django pycairo python-devel python-ldap python-memcached mod_wsgi mod_python python-sqlite2 glibc-devel gcc gcc-c++ git openssl-devel  httpd memcached python-hashlib django-tagging  python-simplejson pip
 
@@ -24,19 +24,19 @@ Twisted需要配合zope.interface 3.6以上版本使用
     sudo pip install whisper （后面千万不要添加参数，否则会导致whisper安装失败的）
     sudo pip install graphite-web --install-option="--prefix=/home/test/graphite" --install-option="--install-lib=/home/test/graphite/webapp"
 
-sudo pip install daemonize
-vi /home/test/graphite/lib/carbon/util.py
-     改from twisted.scripts._twistd_unix import daemonize 变成 import daemonize
+    sudo pip install daemonize
+    vi /home/test/graphite/lib/carbon/util.py
+      改from twisted.scripts._twistd_unix import daemonize 变成 import daemonize
 
-## 初始化配置：
+## 初始化配置
 
-cd /home/test/graphite/conf
-cp carbon.conf.example carbon.conf
-cp storage-schemas.conf.example storage-schemas.conf
-cp graphite.wsgi.example graphite.wsgi
-cp /home/test/graphite/examples/example-graphite-vhost.conf /etc/httpd/conf.d/graphite-vhost.conf
-vi  /etc/httpd/conf.d/graphite-vhost.conf
-     WSGISocketPrefix /home/test/graphite/wsgi
+    cd /home/test/graphite/conf
+    cp carbon.conf.example carbon.conf
+    cp storage-schemas.conf.example storage-schemas.conf
+    cp graphite.wsgi.example graphite.wsgi
+    cp /home/test/graphite/examples/example-graphite-vhost.conf /etc/httpd/conf.d/graphite-vhost.conf
+    vi  /etc/httpd/conf.d/graphite-vhost.conf
+      WSGISocketPrefix /home/test/graphite/wsgi
      同时修改所有opt为home/test，并修改User和Group都为test
 chown -R test.test /var/run/httpd/
 mkdir /home/test/graphite/wsgi
