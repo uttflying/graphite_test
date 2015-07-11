@@ -5,7 +5,7 @@
 
 ## 安装diamond并配置
 
-    cd /home/wenba/
+    cd /home/test/
     git clone https://github.com/BrightcoveOS/Diamond
     cd Diamond
     cp conf/diamond.conf.example conf/diamond.conf

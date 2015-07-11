@@ -13,14 +13,14 @@
     sudo npm install -g karma
 
 ## 安装grafana及配置
-    cd /home/wenba/software/tar/
+    cd /home/test/software/tar/
     wget http://grafanarel.s3.amazonaws.com/grafana-1.8.0.tar.gz
-    tar zxvf grafana-1.8.0.tar.gz -C /home/wenba/
-    mv /home/wenba/grafana-1.8.0/ /home/wenba/grafana
+    tar zxvf grafana-1.8.0.tar.gz -C /home/test/
+    mv /home/test/grafana-1.8.0/ /home/test/grafana
 
 #### 配置graphite和elasticsearch
 
-    cd /home/wenba/grafana/
+    cd /home/test/grafana/
     cp config.sample.js config.js
     vi config.js 
 
@@ -35,7 +35,7 @@
 一款设置CORS（Cross-Origin Resource Sharing）标头的应用，基于XmlHttpRequest，对管理Django应用中的跨域请求非常有帮助
 
     sudo pip install django-cors-headers configobj
-    vi /home/wenba/graphite/webapp/graphite/app_settings.py
+    vi /home/test/graphite/webapp/graphite/app_settings.py
       INSTALLED_APPS里面添加corsheaders, MIDDLEWARE_CLASSES里面添加’corsheaders.middleware.CorsMiddleware’
 
 ## 配置httpd
