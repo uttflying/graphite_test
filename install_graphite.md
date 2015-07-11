@@ -17,7 +17,7 @@ Twisted需要配合zope.interface 3.6以上版本使用
 
 ## 安装步骤
 
-mkdir /home/test/graphite
+    mkdir /home/test/graphite
 cd /home/test/graphite
 sudo pip install https://github.com/graphite-project/ceres/tarball/master
 sudo pip install carbon --install-option="--prefix=/home/test/graphite" --install-option="--install-lib=/home/test/graphite/lib"
