@@ -6,11 +6,11 @@
 
 Twisted需要配合zope.interface 3.6以上版本使用
 
-wget --no-check-certificate https://pypi.python.org/packages/source/z/zope.interface/zope.interface-4.1.1.tar.gz
+    wget --no-check-certificate https://pypi.python.org/packages/source/z/zope.interface/zope.interface-4.1.1.tar.gz
      tar xvf zope.interface-4.1.1.tar.gz -C ../src/
      cd ../src/zope.interface-4.1.1/
      sudo python setup.py install
-wget --no-check-certificate https://pypi.python.org/packages/source/T/Twisted/Twisted-14.0.1.tar.bz2
+    wget --no-check-certificate https://pypi.python.org/packages/source/T/Twisted/Twisted-14.0.1.tar.bz2
      tar xvf Twisted-14.0.1.tar.bz2 -C ../src/
      cd ../src/Twisted-14.0.1/
      sudo python setup.py install
